@@ -6,10 +6,44 @@
   <title>Mon chatbot</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
+</head><link rel="stylesheet" href="style.css">
+<body>
+  
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Chatbot</title>
 </head>
 <body>
-  <!-- À construire : la structure complète de votre interface.
-       Consultez CONSIGNES.md avant de choisir vos éléments et leurs id.
-       Cette page est volontairement vide au démarrage. -->
+
+    <h1>Bienvenue sur mon chatbot</h1>
+    <p>Écris un message pour discuter avec le chatbot.</p>
+
+    <h2>Mots-clés reconnus</h2>
+    <ul>
+        <li>Bonjour</li>
+        <li>html</html></li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>Aide</li>
+    </ul>
+
+    <label for="message">Votre message :</label>
+    <input type="text" id="message" placeholder="Écrivez ici">
+
+    <button type="button" id="envoyer">Envoyer</button>
+    <button type="button" id="recommencer">Recommencer</button>
+
+    <h2>Dernier message envoyé</h2>
+    <p id="dernier-message">Aucun message envoyé.</p>
+
+    <h2>Réponse du chatbot</h2>
+    <p id="reponse">Bonjour ! Je suis votre chatbot. Comment puis-je vous aider ?</p>
+
+    <p>Nombre de messages envoyés : <span id="compteur">0</span></p>
+
+    <p id="erreur"></p>
+<script src="script.js"></script>
 </body>
 </html>

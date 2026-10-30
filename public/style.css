@@ -1,6 +1,111 @@
-/* À compléter : tous les styles de votre interface.
-   1. Lisibilité : police, taille et couleurs.
-   2. Disposition : largeur, centrage, marges et espacements.
-   3. Présentation distincte des messages et des contrôles.
-   4. Adaptation à une fenêtre étroite et focus visible au clavier.
-   Vous choisissez les sélecteurs selon votre HTML. */
+
+/* Style général de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f8;
+    color: #222222;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenu principal */
+body {
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+/* Titre principal */
+h1 {
+    color: #4b4bb7;
+    text-align: center;
+}
+
+/* Titres secondaires */
+h2 {
+    color: #333366;
+    margin-top: 25px;
+}
+
+/* Liste des mots-clés */
+ul {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+/* Champ de saisie */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Boutons */
+button {
+    background-color: #4b4bb7;
+    color: white;
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Effet au survol */
+button:hover {
+    background-color: #33338c;
+}
+
+/* Focus visible au clavier */
+input:focus,
+button:focus-visible {
+    outline: 3px solid #f0a500;
+    outline-offset: 3px;
+}
+
+/* Zone du dernier message */
+#dernier-message {
+    background-color: #e1e7ff;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #4b4bb7;
+}
+
+/* Zone de réponse du chatbot */
+#reponse {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #24a36b;
+}
+
+/* Compteur */
+#compteur {
+    font-weight: bold;
+    color: #4b4bb7;
+}
+
+/* Message d'erreur */
+#erreur {
+    color: #c62828;
+    font-weight: bold;
+}
+
+/* Adaptation aux petits écrans */
+@media (max-width: 500px) {
+    body {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
